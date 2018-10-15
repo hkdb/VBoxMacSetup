@@ -1,7 +1,7 @@
 # VBoxMacSetup v1.0
 **maintained by:** hkdb \<hkdb@3df.io\><br />
 
-### Python script to quickly prepare your MacOS High Sierra Virtual HD with full screen resolution.
+### Bash script to quickly prepare your MacOS High Sierra Virtual HD with full screen resolution.
 
 ## WHAT DOES IT DO?
 
@@ -26,7 +26,7 @@ VBoxManage setextradata "MacOS" "VBoxInternal2/EfiGraphicsResolution" "1920x1080
 
 ## DEPENDENCIES
 
-- Python
+- Bash
 - Virtualbox 5.x
 - MacOS High Sierra Final
 
