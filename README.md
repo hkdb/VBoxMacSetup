@@ -1,4 +1,4 @@
-# VBoxMacSetup v1.0
+# VBoxMacSetup v1.1
 **maintained by:** hkdb \<hkdb@3df.io\><br />
 
 ### Bash script to quickly prepare your MacOS High Sierra Virtual HD with full screen resolution.
@@ -24,6 +24,17 @@ VBoxManage setextradata "MacOS" "VBoxInternal2/EfiGraphicsResolution" "1920x1080
 
 ```
 
+## RELEASE
+
+v1.1 - Merged PR Fix, Added Version Tracking, and Fixed README
+
+v1.0 - Initial Release
+
+
+## DEVELOPMENT AND PULL REQUESTS
+
+As of v1.1, I created a develop branch for development or pull requests if it's still needed. Though, I think this is a simple enough script that probably won't require any further development?
+
 ## DEPENDENCIES
 
 - Bash
@@ -48,7 +59,7 @@ setup.sh takes 2 arguments which is what you named your VM led by a -v flag and 
 
 ## OVERALL PROCEDURE
 
-1. Download [MacOS High Sierra 10.13.6](https://drive.google.com/drive/folders/1CttWjm0dENwIBRUXk1no6S18eOdbnVVU) - 6.8GB
+1. Download the image file from this Techsviewer post: https://techsviewer.com/install-macos-high-sierra-virtualbox-windows/
 2. Install VirtualBox (ie. sudo apt install virtualbox, etc)
 3. Launch Virtualbox
 4. Create Virtual Machine w/ existing vmdk (ie. with what you downloaded in step 1)
