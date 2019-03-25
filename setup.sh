@@ -41,6 +41,7 @@ done
 set -- "${POSITIONAL[@]}" # restore positional parameters
 
 VBoxManage modifyvm "${VM}" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
+VBoxManage modifyvm "${VM}" --cpu-profile "Intel Core i7-6700K"
 VBoxManage setextradata "${VM}" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac11,3"
 VBoxManage setextradata "${VM}" "VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" "1.0"
 VBoxManage setextradata "${VM}" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Iloveapple"
