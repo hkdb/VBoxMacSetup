@@ -1,4 +1,4 @@
-# VBoxMacSetup v1.1
+# VBoxMacSetup v1.2
 **maintained by:** hkdb \<hkdb@3df.io\><br />
 
 ### Bash script to quickly prepare your MacOS High Sierra Virtual HD with full screen resolution.
@@ -24,7 +24,15 @@ VBoxManage setextradata "MacOS" "VBoxInternal2/EfiGraphicsResolution" "1920x1080
 
 ```
 
+It also executes the following if the host is not on an Intel CPU:
+```
+VBoxManage modifyvm "${VM}" --cpu-profile "Intel Core i7-6700K"
+```
+
+
 ## RELEASE
+
+v1.2 - Added support for non-Intel hosts based on @jld3103
 
 v1.1 - Merged PR Fix, Added Version Tracking, and Fixed README
 
@@ -38,12 +46,12 @@ As of v1.1, I created a develop branch for development or pull requests if it's 
 ## DEPENDENCIES
 
 - Bash
-- Virtualbox 5.x
+- Virtualbox 5.x and 6.x
 - MacOS High Sierra Final
 
 ## TESTED ON
 
-- Ubuntu Linux 18.04
+- Ubuntu Linux 18.04, 18.10, 19.04
 
 ## INSTALLATION
 
